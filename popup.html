@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+  body {
+    width: 260px;
+    margin: 0;
+    padding: 20px;
+    background: #0a1530;
+    color: #e8edf9;
+    font-family: -apple-system, "Segoe UI", Roboto, sans-serif;
+    text-align: center;
+  }
+
+  .brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 2px;
+  }
+
+  .brand img.logo {
+    width: 28px;
+    height: 28px;
+    border-radius: 7px;
+  }
+
+  .brand img.yt-badge {
+    width: 16px;
+    height: 16px;
+    opacity: 0.85;
+  }
+
+  h1 {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0;
+    letter-spacing: 0.5px;
+  }
+
+  .subtitle {
+    font-size: 11px;
+    color: #8ea0c9;
+    margin: 0 0 18px 0;
+  }
+
+  .toggle-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 14px;
+    background: #111d40;
+    border-radius: 12px;
+    margin-bottom: 14px;
+  }
+
+  .status-label {
+    font-size: 13px;
+    font-weight: 600;
+  }
+
+  .status-on { color: #4ade80; }
+  .status-off { color: #94a3b8; }
+
+  /* Switch */
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 46px;
+    height: 26px;
+  }
+
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: #2c3a5e;
+    transition: 0.25s;
+    border-radius: 26px;
+  }
+
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 3px;
+    bottom: 3px;
+    background-color: #e8edf9;
+    transition: 0.25s;
+    border-radius: 50%;
+  }
+
+  input:checked + .slider {
+    background-color: #2563eb;
+  }
+
+  input:checked + .slider:before {
+    transform: translateX(20px);
+  }
+
+  /* Stats dashboard */
+  .stats {
+    background: #111d40;
+    border-radius: 12px;
+    padding: 14px;
+    margin-bottom: 14px;
+  }
+
+  .stat-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 6px 4px;
+  }
+
+  .stat-label {
+    font-size: 12px;
+    color: #8ea0c9;
+  }
+
+  .stat-value {
+    font-size: 18px;
+    font-weight: 700;
+    color: #93b4ff;
+  }
+
+  .stat-divider {
+    height: 1px;
+    background: #1b2a52;
+    margin: 4px 0;
+  }
+
+  .total-row .stat-value {
+    color: #4ade80;
+  }
+
+  .footer {
+    margin-top: 4px;
+    padding-top: 12px;
+    border-top: 1px solid #1b2a52;
+    font-size: 11px;
+    color: #6b7fab;
+  }
+
+  .footer a {
+    color: #93b4ff;
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  .footer a:hover {
+    text-decoration: underline;
+  }
+</style>
+</head>
+<body>
+
+  <div class="brand">
+    <img class="logo" src="icons/icon48.png" alt="logo">
+    <h1>YouTube Ad Skip</h1>
+    <img class="yt-badge" src="icons/youtube.svg" alt="YouTube">
+  </div>
+  <p class="subtitle">Automatic ad skipper</p>
+
+  <div class="toggle-row">
+    <span id="statusLabel" class="status-label status-on">ON</span>
+    <label class="switch">
+      <input type="checkbox" id="toggle" checked>
+      <span class="slider"></span>
+    </label>
+  </div>
+
+  <div class="stats">
+    <div class="stat-row">
+      <span class="stat-label">Skipped this tab</span>
+      <span class="stat-value" id="sessionCount">0</span>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat-row total-row">
+      <span class="stat-label">Total ads skipped</span>
+      <span class="stat-value" id="totalCount">0</span>
+    </div>
+  </div>
+
+  <div class="footer">
+    Built by <a href="https://github.com/harivishnu9345-creator" target="_blank">@harivishnu9345-creator</a>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
