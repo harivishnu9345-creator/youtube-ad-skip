@@ -11,13 +11,14 @@ YouTube Ad Skip watches the page in the background and instantly skips, mutes, a
 This extension isn't on the Chrome Web Store, so it's installed manually in 3 quick steps:
 
 ### Step 1 — Download the ZIP
-Click the green **Code** button at the top of this repo → **Download ZIP**, then unzip the folder anywhere on your computer.
+👉 [**Download YouTube-Ad-Skip.zip**](https://github.com/harivishnu9345-creator/youtube-ad-skip/releases/download/v1.0/YouTube-Ad-Skip.zip)
+
+Then unzip the folder anywhere on your computer.
 
 ### Step 2 — Open Chrome's Extensions page
-Copy past this in url secction
 In Chrome, go to:
 ```
-chrome://extensions  
+chrome://extensions
 ```
 Turn on **Developer mode** using the toggle in the top-right corner of the page.
 
