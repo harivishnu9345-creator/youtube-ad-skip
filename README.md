@@ -1,5 +1,12 @@
 ﻿# YT Ad Mute & Skip 🟢
+# 🔗 Links
 
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/harivishnu-s-624265370/)
+[![GitHub](https://img.shields.io/badge/GitHub-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/harivishnu9345-creator/)
+[![LeetCode](https://img.shields.io/badge/LeetCode-%23FFA116.svg?style=for-the-badge&logo=LeetCode&logoColor=black)](https://leetcode.com/u/harivishnu_7)
+[![CyLab Academy](https://img.shields.io/badge/CyLab_Academy-000000?style=for-the-badge&logo=terminal&logoColor=white)](https://learn.cylabacademy.org/users/Haio)
+
+<br>
 **Automatic YouTube ad skipper and muter for Chrome.**
 
 YT Ad Mute & Skip watches the page in the background. The moment an ad appears, it instantly mutes the audio, skips the ad as soon as the button is available, and restores your original volume—no clicking required.
