@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>YT Ad Mute &amp; Skip</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <main class="container">
+    <h1>YT Ad Mute &amp; Skip</h1>
+
+    <label class="switch-row" for="toggle-enabled">
+      <span class="switch-label">Enable ad mute &amp; skip</span>
+      <span class="switch">
+        <input type="checkbox" id="toggle-enabled">
+        <span class="slider" aria-hidden="true"></span>
+      </span>
+    </label>
+
+    <p id="status-text" class="status">Active: muting and skipping YouTube ads</p>
+
+    <section class="stats" aria-label="Statistics">
+      <div class="tile">
+        <span id="stat-skipped" class="tile-value">0</span>
+        <span class="tile-label">Ads skipped</span>
+      </div>
+      <div class="tile">
+        <span id="stat-muted" class="tile-value">0</span>
+        <span class="tile-label">Ads muted</span>
+      </div>
+    </section>
+
+    <button type="button" id="btn-reset" class="reset">Reset stats</button>
+
+    <p id="note-text" class="note">Chrome shows a ‘debugging this browser’ banner while a skip click is being sent. This is normal.</p>
+  </main>
+
+  <script src="popup.js"></script>
+</body>
+</html>
